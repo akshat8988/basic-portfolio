@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" type="text/css"  href="css/main.css" />
+</head>
+<body >
+    <div class="main">
+    <div class="d1">
+        <img src="logo.png.png"  >
+    </div>
+
+    <div class="d3">
+        <img src="akshat photo.PNG" height="100px" width="100px" >
+    </div>
+
+    <div class="d2"><pre><a href="#abc" style="text-decoration: none;"><span  style="color: rgb(255, 208, 0);" class="s1">About</span></a>     <a href="#pqr" style="text-decoration: none;color: black;">      <span id="s2">Technical Skills</span></a>       <a href="#xyz" style="text-decoration: none; color: black;">   <span id="s3">Achievements & Participations</span></a>  </pre>
+
+    </div>
+</div>
+
+<div class="main1">
+    <div>
+
+        <pre id="pre1">
+I,m <span style="color: rgb(255, 208, 0);">Akshat Gandhi</span>             
+        </pre>
+<pre style="font-family: Arial, Helvetica, sans-serif;margin-top: -7%;"> 
+To work endlessly to imbibe various organisational
+concepts, to give my best all the time, to hold a responsible
+position in the organisation where I work and to shed every
+possible drop of sweat for taking it to newer heights.
+
+<p id="abc"></p>
+        </pre>
+<p><a href="https://drive.google.com/file/d/1l-bYJDLI-QrIcRWqHQzg-150T_AIlF4e/view?usp=sharing" target="_blank" class="a1">Download CV </a></p>
+
+    </div>
+
+</div>
+
+
+<div class="images" >
+    <img src="capture3.jpg" class="c2" height="300px" width="200px" >
+    <img src="me.jpg" class="me" height="300px" width="200px">
+</div>
+
+
+<hr>
+    </div>
+    
+    
+    <div style="margin-left: 15%;margin-top:15%;background-color: " ><p id="pqr"></p> 
+        <pre id="pre1">
+           Hey! <span style="color: rgb(255, 208, 0);">I'm a Web Developer</span>            
+                   </pre><pre class="smoke-title" style="font-family: Verdana, Geneva, Tahoma, sans-serif;margin-left: 3%;font-size: 1.9em;margin-top: -11%;"> 
+&nabla; passionate about learning new technologies &nabla;
+                       
+                               </pre></div>
+
+                           
+
+
+
+<div class="div4"  >
+    <br>
+  <div id="scroll-container">
+    <div id="scroll-text">
+        <p >
+        ▪ Java ▪ C ▪ HTML ▪ Javascript ▪ CSS <br>  
+        ▪ Data Structures<br>
+        ▪ Bootstrap<br>
+        ▪ Azure (Basic)</p>
+        
+  </div>
+ </div><p id="xyz"></p>
+</div>
+
+
+<div style="display: flex;" id=""> 
+    <img src="ac.svg" height="500" width="500">
+<pre id="pre3" style="font-family: Arial, Helvetica, sans-serif;margin-left: auto;margin-top: 9.9%;line-height: 2em;">
+▪ Member of web team of IEI (Institution of Engineers India) in Chitkara University.
+▪ TCS Ion Career Edge Young Professional Course.
+▪ Completion of “Engineering Virtual Program by Goldman Sachs”
+
+</pre>
+
+</div>
+
+
+<div class="title-wrapper">
+    <h1 class="title">i TRY to create!</h1>
+  </div>
+    
+<div style="margin-top: -9%;">
+    
+    <img src="footer.png" width="100%">
+    
+    
+    <div style="display: flex;justify-content: space-evenly;margin-top: -10%;" > 
+    <a href="https://www.linkedin.com/in/akshat-gandhi-05181022b
+    " target="_blank" style="font-size: 3em;"> <i class="fa-brands fa-linkedin">  </i></a>
+    <a href="https://github.com/akshat8988
+    "style="font-size: 3em;" target="_blank"> <i class="fa-brands fa-github">  </i></a>
+    <a href="http://gmail.com"  target="_blank"style="font-size: 3em;"> <i class="fa-solid fa-envelope">  </i></a>
+</div>
+</div>
+
+<br>
+<center><p style="color: azure;font-family: Arial, Helvetica, sans-serif;">&copy Akshat Gandhi</p></center>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="js/main.js"></script>
+
+<script>
+const spotlightSize = 400;
+
+document.addEventListener('mousemove', function (event) {
+    if (window.event) { // IE fix
+        event = window.event;
+    }
+    // Get the coordinates of the title
+    let titleRect = document.querySelector('.title').getBoundingClientRect();
+   
+    // Grab the mouse's X-position
+    let mouseX = event.clientX;
+  
+  // Position spotlight x coordinate based on mouse x, center based on width of spotlight, take into account element x offset
+    let spotlightX = mouseX - (spotlightSize / 2) - titleRect.left;
+  
+    // Grab the mouse's Y position
+    let mouseY = event.clientY;
+  
+  // Position spotlight y coordinate based on mouse y, center based on width of spotlight, take into account element y offset
+  let spotlightY = mouseY  - (spotlightSize / 2) - titleRect.top;
+    
+    // Set x and y position of spotlight
+    const element = document.querySelector('.title');
+    element.style.backgroundPosition = spotlightX + 'px ' + spotlightY + 'px';
+}, false);
+
+
+</script>
+
+
+
+</html>
