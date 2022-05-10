@@ -1,244 +1,253 @@
- body{
-    background-image: linear-gradient(to right, rgb(255, 255, 255) 35%, #d1f1f3 100%);
+body{
+    margin:0;
+    padding:0;
 }
+section{
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
 
-.main
-{
-    margin-top: 4%;
 }
-
-.d1 {
-    height: 10%;
-    width: 15%;
-    /* background-color: black ; */
-    transition: width 2s, height 2s, transform 2s;
-    margin-top: 3%;
-  }
-  
-  .d1:hover {
-    width: 11%;
-    height: 15%;
-    transform: rotate(360deg);
-  }
-
-.d3
-{
-    height: 10%;
-    width: 15%;
-    margin-top: -8.3%;
-    border-radius:20em ;
-    margin-left: 14%;
-    
-}
-
-  .d2
-  {
-      margin-left: 39%;
-      font-family:Arial, Helvetica, sans-serif;      
-      color: black;
-      font-size: large;
-      margin-top:-7%;
-      font-weight: bold ;
-      font-size: 1.4em;
-      
-
-  }
-
-.s1:hover
-{
-   background-color: rgb(39, 39, 39);
-    
-}
-
-#s2:hover
-{
-   background-color: rgb(250, 227, 19);
-    
-}
-#s3:hover
-{
-   background-color: rgb(250, 227, 19);
-    
-}
-
-
-
-  .main1
-  {
-      margin-top: 20%;
-      margin-left: 10%;
-      
-  }
-  #pre1
-  {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 3em;
-    
-  }
-
-  
-
- 
-  .a1 {
-    padding: 10px 10px;
-    
-    color: rgb(255, 238, 0);
-    text-decoration: none;
-    font-size: 1.1em;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    background: rgb(10, 10, 10);
-   }
-
-
-.a1:hover {
-    color: rgb(5, 5, 5);
-    background: rgb(255, 196, 0);
-    box-shadow: 0 0 39px #000000;
-}
-
-
-
-
-
-  .images{
-    width: 55%;
+section::before{
+    content: '';
     position: absolute;
-    bottom: 0;
-    right: 149px;
-    
-     
-}
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to right, #f00,#f00,#0f0,#0ff,#ff0,#0ff); */
 
-.images img{
-    
+    background: linear-gradient(to right, #e6c6d7,#e6c6d7,#e6c6d7,#e6c6d7,#e6c6d7,#e6c6d7);
+
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+video{
+    object-fit: cover;
+    width: max-content;
+}
+h1{
+    margin: 0;
+    padding: 0;
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(50%);
-    transition: bottom 1s, left 1s;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-family:sans-serif;
+    text-transform: uppercase;
 }
-
-.images:hover .c2{
-    bottom: 40px;
+h1 span{
+    display: inline-block;
+    animation: animate 1s linear forwards;
 }
-
-.images:hover .me{
-    left: 40%;
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px)
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter:blur(0)
+    }
 }
-
-
-
-hr{ 
-  
-  
-    border-left:    1px solid hsla(20, 10%, 50%,100);
-    height:         38vh;
-    width:          1px;
-    margin-left: 7%;
-    margin-top: -18.1%;       
-
-}
-
-.pre2
-{
-  font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    line-height: 0.9em;
-    color: rgb(0, 0, 0);
-    margin-left: 10%;
-
-}
-
-.div4
-{
-  background-image:url("bg.png");
-  margin-top: 9%;
-  
-  
-  
- 
-}
-
-
-#scroll-container {
-   overflow: hidden;
-   font-family: Arial, Helvetica, sans-serif;
-   color: rgb(255, 255, 255);
-   line-height: 2em;
-   font-size: large;
+h1 span:nth-child(1){
    
+    opacity: 0;
+    animation-delay: 2s;
+}
+h1 span:nth-child(2){
+    opacity: 0;
+    animation-delay: 2.5s;
+}
+h1 span:nth-child(3){
+    opacity: 0;
+    animation-delay: 2.75s;
+}
+h1 span:nth-child(4){
+    opacity: 0;
+    animation-delay: 3s;
+}
+h1 span:nth-child(5){
    
-   
+    opacity: 0;
+    animation-delay: 3.5s;
+}
+h1 span:nth-child(6){
+    opacity: 0;
+    animation-delay: 3.75s;
+}
+h1 span:nth-child(7){
+    opacity: 0;
+    animation-delay: 4s;
+}
+h1 span:nth-child(8){
+    opacity: 0;
+    animation-delay: 4.5s;
+}
+h1 span:nth-child(9){
+    opacity: 0;
+    animation-delay: 4.75s;
+}
+h1 span:nth-child(10){
+    opacity: 0;
+    animation-delay: 5s;
+}
+h1 span:nth-child(11){
+    opacity: 0;
+    animation-delay: 5.5s;
+}
+h1 span:nth-child(12){
+    opacity: 0;
+    animation-delay: 5.75s;
+}
+h1 span:nth-child(13){
+    opacity: 0;
+    animation-delay: 6s;
+}
+h1 span:nth-child(14){
+    opacity: 0;
+    animation-delay: 6.5s;
 }
 
-#scroll-text {
-  
-  height: 100%;
-  text-align: center;
-  
-  
-  -moz-transform: translateY(100%);
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-  
-  -moz-animation: my-animation 5s linear infinite;
-  -webkit-animation: my-animation 5s linear infinite;
-  animation: my-animation 7s linear infinite;
-}
-
-
-
-
-@-webkit-keyframes my-animation {
-  from { -webkit-transform: translateY(100%); }
-  to { -webkit-transform: translateY(-100%); }
-}
-
-@keyframes my-animation {
-  from {
-    -moz-transform: translateY(100%);
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+.heart-rate {
+    width: 150px;
+    height: 73px;
+    position: relative;
+    margin: 20px auto;
   }
-  to {
-    -moz-transform: translateY(-100%);
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+  
+  .fade-in {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    top: 0;
+    right: 0;
+    animation: heartRateIn 2.5s linear infinite;
   }
-}
-
-
-.div5
-{
-
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
-}
-
-
-
-
-.title-wrapper {
-  margin: -1.9rem 29.9rem;
-}
-
-.title {
-  font-size: 3rem;
-  color: rgba(0, 0, 0, 0.08);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-background-clip: text;
-  background-image: radial-gradient(closest-side, rgb(218, 149, 1) 100%, transparent 0);
-  background-repeat: no-repeat;
-  background-size: 300px 300px;
   
-  transition: all .7s cubic-bezier(.19,1,.22,1);
-  
-}
+  .fade-out {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: -120%;
+    animation: heartRateOut 2.5s linear infinite;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 80%, rgba(255, 255, 255, 0) 100%);
+  }
 
-html
-{
-  scroll-behavior: smooth;
-}
+
+  
+
+
+  
+  @keyframes heartRateIn {
+    0% {
+      width: 100%;
+    }
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  @keyframes heartRateOut {
+    0% {
+      left: -120%;
+    }
+    30% {
+      left: -120%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.heart-rate {
+    width: 150px;
+    height: 73px;
+    position: relative;
+    margin: 20px auto;
+  }
+  
+  .fade-in {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    top: 0;
+    right: 0;
+    animation: heartRateIn 2.5s linear infinite;
+  }
+  
+  .fade-out {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: -120%;
+    animation: heartRateOut 2.5s linear infinite;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgb(0, 0, 0)255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%);
+  }
+  
+  @keyframes heartRateIn {
+    0% {
+      width: 100%;
+    }
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  @keyframes heartRateOut {
+    0% {
+      left: -120%;
+    }
+    30% {
+      left: -120%;
+    }
+    100% {
+      left: 0;
+    }
+  } */
